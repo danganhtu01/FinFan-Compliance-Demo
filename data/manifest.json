@@ -1,0 +1,73 @@
+[
+  {
+    "key": "mas",
+    "name": "MAS Investor Alert List (Singapore)",
+    "count": 909,
+    "sha256": "5e299abb86a36308fd24d3185a5b834020bc916078f8436872da85c1246b6ca7",
+    "fetched_at": "2026-06-11T09:00:34.2141887Z"
+  },
+  {
+    "key": "eu_fin",
+    "name": "EU consolidated financial sanctions (DG FISMA / FSF)",
+    "count": 5994,
+    "sha256": "7133f32aee690d40382560820c13831b117db6f838ad5330a4c0756692f68220",
+    "fetched_at": "2026-06-11T09:00:34.2141887Z",
+    "authority_modified": "2026-06-05T14:00:13Z"
+  },
+  {
+    "key": "eu_travel",
+    "name": "EU consolidated travel restrictions (Sanctions Map)",
+    "count": 3859,
+    "sha256": "635d0012a7bc91e19da35ebac2a979891795db8a6502e33e306eab2cecb1bf72",
+    "fetched_at": "2026-06-11T09:00:34.2141887Z",
+    "authority_modified": "2026-06-11T08:38:19Z"
+  },
+  {
+    "key": "uk",
+    "name": "UK Sanctions List (FCDO)",
+    "count": 15313,
+    "sha256": "4d2776aa0e93ac29fd99366eb683c7c9895f09efbeef480ed9bc54163c290ffc",
+    "fetched_at": "2026-06-11T09:00:34.2141887Z",
+    "authority_modified": "2026-06-10T15:24:57Z"
+  },
+  {
+    "key": "au_dfat",
+    "name": "Australia DFAT Consolidated List",
+    "count": 11046,
+    "sha256": "bd9899ee84000a76d79c39e4f59897d9c6fab90a676e423b077b6b0ee62e0f56",
+    "fetched_at": "2026-06-11T09:00:34.2141887Z",
+    "authority_modified": "2026-06-06T01:39:25Z"
+  },
+  {
+    "key": "nl",
+    "name": "Netherlands National Terrorism List",
+    "count": 120,
+    "sha256": "55af34c6c124a9113589a0f7d939b28ae0fb56679cbbe978f18de9830ca9e1a9",
+    "fetched_at": "2026-06-11T09:00:34.2141887Z",
+    "authority_modified": "2024-11-11T10:36:37Z"
+  },
+  {
+    "key": "ca_sema",
+    "name": "Canada Consolidated Autonomous Sanctions (SEMA)",
+    "count": 3502,
+    "sha256": "05b2b36865ca2cf84de9c5c6745ecb15be9368f6ea19af0892a253c9baaa635e",
+    "fetched_at": "2026-06-11T09:00:34.2141887Z",
+    "authority_modified": "2026-06-09T10:24:44Z"
+  },
+  {
+    "key": "ofac_sdn",
+    "name": "OFAC SDN list (US Treasury)",
+    "count": 19066,
+    "sha256": "83422958b73c1afd627a763974d8010a2bcef53cbe0e77dd3b3db310d994bded",
+    "fetched_at": "2026-06-11T09:00:34.2141887Z",
+    "authority_modified": "2026-06-10T16:31:44Z"
+  },
+  {
+    "key": "un",
+    "name": "UN Security Council Consolidated List",
+    "count": 1002,
+    "sha256": "8ec7d6b848a51521293f04e8fc3505fcadf94fb347bcc00f54f0e076fcc28298",
+    "fetched_at": "2026-06-11T09:00:34.2141887Z",
+    "authority_modified": "2026-06-10T23:02:24Z"
+  }
+]

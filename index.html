@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FinFan Compliance</title>
+    <!-- wasm-opt disabled: trunk's cached binaryen rejects the wasm features
+         emitted by current rustc ("error validating input"); size is acceptable
+         for an intranet/demo SPA without -Oz. -->
+    
+<script type="module">
+import init, * as bindings from '/FinFan-Compliance-Demo/finfan-ui-48a38fb2949abfea.js';
+const wasm = await init({ module_or_path: '/FinFan-Compliance-Demo/finfan-ui-48a38fb2949abfea_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+    <style>
+      :root { color-scheme: light; }
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: system-ui, sans-serif; background: #f6f7f9; color: #1a1a1a; }
+      code { background: #eef0f3; padding: .05rem .3rem; border-radius: 4px; font-size: .85em; }
+      .muted { color: #6b7280; }
+      .center { text-align: center; margin-top: 3rem; }
+      .error { color: #b91c1c; min-height: 1.2em; }
+      .warn { color: #b45309; }
+      .ok { color: #047857; }
+      .lbl { font-size: .8rem; color: #6b7280; margin-top: .75rem; }
+
+      /* Login card */
+      .card { max-width: 22rem; margin: 8vh auto; padding: 2rem; background: #fff;
+              border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+      .card h1 { font-size: 1.25rem; margin: 0 0 .25rem; }
+      .card form { display: flex; flex-direction: column; gap: .75rem; margin-top: 1rem; }
+
+      input, button { padding: .55rem .7rem; font-size: .95rem; border-radius: 8px; border: 1px solid #d1d5db; }
+      button { background: #fff; cursor: pointer; }
+      button.primary { background: #1d4ed8; color: #fff; border: none; font-weight: 600; }
+      button:disabled { opacity: .6; cursor: default; }
+
+      /* Chrome */
+      .topbar { display: flex; align-items: center; gap: 1rem; padding: .75rem 1.25rem;
+                background: #fff; border-bottom: 1px solid #e5e7eb; }
+      .topbar .muted { margin-left: auto; }
+      .nav { display: flex; gap: .25rem; padding: .5rem 1rem; background: #fff; border-bottom: 1px solid #e5e7eb; }
+      .navlink { border: none; background: none; color: #374151; padding: .4rem .7rem; border-radius: 8px; }
+      .navlink.active { background: #eef2ff; color: #1d4ed8; font-weight: 600; }
+      .content { padding: 1.5rem 1.25rem; max-width: 60rem; margin: 0 auto; }
+      h2 { margin-top: 0; }
+
+      .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; margin: .5rem 0 1rem; }
+
+      /* Result cards */
+      .card.result { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+                     padding: 1rem; margin-top: 1rem; }
+      .result-head { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+      .badge { font-size: .72rem; font-weight: 700; letter-spacing: .03em; padding: .2rem .5rem;
+               border-radius: 999px; color: #fff; }
+      .b-block { background: #b91c1c; } .b-alert { background: #d97706; }
+      .b-gray { background: #6b7280; } .b-clear { background: #059669; } .b-auto { background: #2563eb; }
+      .meta { margin-top: .6rem; font-size: .88rem; display: grid; gap: .15rem; }
+      .cands { margin-top: .6rem; font-size: .9rem; }
+      .cand { padding: .1rem 0; }
+
+      /* Tables + stats */
+      .tbl { width: 100%; border-collapse: collapse; margin-top: 1rem; background: #fff;
+             border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }
+      .tbl th, .tbl td { text-align: left; padding: .55rem .7rem; border-bottom: 1px solid #eef0f3; font-size: .9rem; }
+      .tbl th { background: #f9fafb; font-size: .78rem; text-transform: uppercase; letter-spacing: .03em; color: #6b7280; }
+      .actions { display: flex; gap: .35rem; }
+      .actions button { padding: .25rem .5rem; font-size: .8rem; }
+      .cards-row { display: flex; gap: 1rem; margin: 1rem 0; }
+      .stat { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 1rem 1.25rem; min-width: 8rem; }
+      .stat .num { font-size: 1.6rem; font-weight: 700; }
+    </style>
+  <link rel="modulepreload" href="/FinFan-Compliance-Demo/finfan-ui-48a38fb2949abfea.js" crossorigin="anonymous" integrity="sha384-WSN/ngqounyb3PFU1QsQC/DZSt1JbyCLMAA9ZEQaGBoS50AkbStOkMW3aAyGlO4T"><link rel="preload" href="/FinFan-Compliance-Demo/finfan-ui-48a38fb2949abfea_bg.wasm" crossorigin="anonymous" integrity="sha384-1PF0Cz8HtY+ts4B0P3MpY+US5rRbhFtAXJVphFRwnmL/DaV+X+sO50NM2xulKvAc" as="fetch" type="application/wasm"></head>
+  <body></body>
+</html>
